@@ -48,7 +48,7 @@ namespace NewTosken.Controllers
 
             var update = Builders<players>.Update.Set("current_health", play.current_health);
 
-            dbClient.GetDatabase("tosken").GetCollection<players>("players").UpdateOne(play,update);
+            dbClient.GetDatabase("tosken").GetCollection<players>("players").UpdateOne(filter,update);
 
             return new JsonResult("Updated Successfully");
         }

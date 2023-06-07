@@ -17,7 +17,9 @@ namespace NewTosken.Models
         public Int32 db_melee { get; set; }
 
         public Int32 current_health { get; set; }
+
         public Int32 max_health { get; set; }
+
         public Int32 temp_health { get; set; }
 
     }
